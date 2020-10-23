@@ -15,7 +15,7 @@ public class ShopInitDataRepository {
 
     double randomPrice(){
         Random random = new Random();
-        return random.nextInt(35000) / 100;
+        return ((double)(random.nextInt(30000)/100)+50);
     }
 
     void addProduct(String itemName, double price){
